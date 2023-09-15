@@ -2,11 +2,15 @@
 Simple text scanner, built on `IParsable<T>`. 
 Inspired by Java Scanner
 
+## Install
+
+You can obtain this package by **[Nuget](https://www.nuget.org/packages/Zsktnm.TextScanner)**
+
 ## Usage
 
 ### Create the scanner
 
-You can use constructor with `TextReader` parameter or static method `FromConsole`.
+You can use the constructor with `TextReader` parameter or the static method `FromConsole`.
 
 ```csharp
 // read from file
@@ -23,7 +27,7 @@ Scanner scanner = Scanner.FromConsole();
 // ...
 ```
 
-### Read Single Value
+### Read a single value
 
 If you want to parse your value, you can use `Read<T>` or `TryRead<T>` methods, where `T` must be `IParseble<T>`.
 
@@ -48,7 +52,7 @@ You can also use the `ReadBlock`, `ReadChar`, `ReadLine` and `ReadToEnd` methods
 
 `ReadBlock` method returns the first value bounded by spaces. Note, that if input contains only whitespaces `ReadBlock` returns `string.Empty`, and if we have empty input (typicaly, the end of stream) it returns `null`.  
 
-### Read Multiple Values
+### Read multiple values
 
 Use `ReadValues<T>` method to enumerate values:
 ```csharp
