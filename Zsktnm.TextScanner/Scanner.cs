@@ -123,7 +123,7 @@ namespace Zsktnm.TextScanner
             }
         }
 
-        public IEnumerable<string> ReadBlocks(bool skipOnErrors = false, IFormatProvider? provider = null)
+        public IEnumerable<string> ReadBlocks()
         {
             string? word;
             while ((word = ReadBlock()) != null)
@@ -132,8 +132,7 @@ namespace Zsktnm.TextScanner
             }
         }
 
-        public IEnumerable<string> ReadLines(bool skipOnErrors = false,
-            IFormatProvider? provider = null)
+        public IEnumerable<string> ReadLines()
         {
             string? line;
             while ((line = ReadLine()) != null)

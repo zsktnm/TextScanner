@@ -14,6 +14,14 @@ Inspired by Java Scanner</Description>
     <PackageTags>console; scanner; text scanner;</PackageTags>
     <PackageProjectUrl>https://github.com/zsktnm/TextScanner</PackageProjectUrl>
     <RepositoryUrl>https://github.com/zsktnm/TextScanner</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
