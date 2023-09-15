@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>Zsktnm.TextScanner</Title>
+    <Version>0.1.0</Version>
+    <Authors>Zsktnm</Authors>
+    <Company>Zsktnm and Cat</Company>
+    <Product />
+    <Description>Simple text scanner, built on IParsable&lt;T&gt;
+Inspired by Java Scanner</Description>
+    <PackageTags>console; scanner; text scanner;</PackageTags>
+    <PackageProjectUrl>https://github.com/zsktnm/TextScanner</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zsktnm/TextScanner</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
