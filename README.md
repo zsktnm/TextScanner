@@ -10,7 +10,7 @@ You can obtain this package by **[Nuget](https://www.nuget.org/packages/Zsktnm.T
 
 ### Create the scanner
 
-You can use the constructor with `TextReader` parameter or the static method `FromConsole`.
+Use the constructor with `TextReader` parameter or the static method `FromConsole` to create the `Scanner`.
 
 ```csharp
 // read from file
@@ -37,13 +37,9 @@ int count = scanner.Read<int>();
 ```
 
 ```csharp
-Console.WriteLine($"Enter the count of dates: ");
-while(true)
+Console.WriteLine($"Enter the count of numbers: ");
+while (!scanner.TryRead(out count))
 {
-    if (scanner.TryRead(out count))
-    {
-        break;
-    }
     Console.WriteLine("Invalid input. Try again");
 }
 ```
